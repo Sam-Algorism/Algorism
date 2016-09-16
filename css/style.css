@@ -1,0 +1,141 @@
+.social {
+	float: right;
+}
+
+#social span {
+	padding: 1em 0.5em 1em 0.5em;
+
+}
+
+.logo img {
+	margin: 0;
+	max-width: 200px;
+	position: relative;
+	top: 10px;
+	width: 100%;
+}
+
+.mytop {
+	background: #002633;
+	padding-top: 4px;
+}
+
+#new_text> a {
+	color: #002633;
+}
+
+h2 {
+	line-height: 2.3;
+}
+
+.top-nav li a, .background-white .top-nav li a {
+    color: #002633;
+    font-size: 0.85rem;
+    padding: 1.7em 0.25em 2.5em 1em;
+}
+
+.owl-buttons {
+	display: none;
+}
+
+#contact-us {
+	background-color: #fff !important;
+}
+
+.new_h1 {
+	color: #C81010;
+	background-color: #FFF;
+}
+
+h2.new_h1 {
+	color: #C81010;
+	background-color: #FFF;
+	margin-left: 7em;
+}
+
+h3.new_h1 {
+	color: #C81010;
+	background-color: #FFF;
+}
+/*@media screen and (max-width: 768px) {
+
+}
+*/
+@media only screen and(min-device-width: 320px) and (max-device-width: 480px){
+	.top-nav li a, .background-white .top-nav li a {
+		background: #fff;
+		font-size: 1.5em;
+		padding: 1.2em 1em;
+	}
+	.nav-text {
+		color: #fff;
+		display: block;
+		font-size: 1.2rem;
+		line-height: 3rem;
+		margin-right: 0.625rem;
+		max-width: 100%;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	/*.logo img {
+		margin: 0;
+		max-width: 200px;
+		position: relative;
+		top: 5px;
+		margin-left: 6.5em;
+		width: 100%;
+
+	}*/
+
+	.logo img.logo-dark {
+		margin: 0;
+		max-width: 200px;
+		position: relative;
+		top: 5px;
+		margin-left: 1.5em;
+		width: 100%;
+
+	}
+
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px){
+	.top-nav li a, .background-white .top-nav li a {
+			background: #fff;
+			font-size: 1.5em;
+			padding: 1.2em 1em;
+	}
+	.nav-text {
+		color: #fff;
+		display: block;
+		font-size: 1.2rem;
+		line-height: 3rem;
+		margin-right: 0.625rem;
+		max-width: 100%;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	/*.logo img {
+		margin: 0;
+		max-width: 200px;
+		position: relative;
+		top: 5px;
+		margin-left: 13.5em;
+		width: 100%;
+
+	}*/
+
+	.logo img.logo-dark {
+		margin: 0;
+		max-width: 200px;
+		position: relative;
+		top: 5px;
+		margin-left: 5.5em;
+		width: 100%;
+
+	}
+
+}
+
