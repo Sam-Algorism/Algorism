@@ -158,6 +158,7 @@ ul.text-list ul, ol.text-list ol {
 iframe {
   display: block;
   margin: 0;
+  /*width: 320px;*/
 }
 
 /* Drop Cap */
@@ -1941,6 +1942,7 @@ nav.fixed .logo-dark, .fixed nav .logo-dark {
 
 .top-nav ul ul {
   background: #fff none repeat scroll 0 0;
+  width: 15%;
 }
 .top-nav li ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);

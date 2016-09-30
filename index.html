@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Algorism Limited</title>
+  <title>ALGORISM Limited | Technology.Innovation.Value</title>
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/responsee.css">
@@ -13,26 +13,32 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script> 
-  <script>
-    window.sr = ScrollReveal();
-  </script>    
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+  <script type="text/javascript" src="js/script.js"></script>  
+
+  <!-- HTML5 shim for IE backwards compatibility -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+
 </head>
 
-<body class="size-1140">
+<body class="size-1140" onload="hideLoader()">
+  <!-- Loader -->
+  <div id="loader"></div>
   <!-- HEADER -->
   <header role="banner" class="position-absolute">
     <div class="mytop">
-      <span> <i class="icon-sli-phone my-white-text icon"> +2348022231719</i> </span>
-      <span> <i class="icon-mail my-white-text icon"> info@algorismng.com</i> </span>
+      <span> <i class="fa fa-phone text-white icon"> +2348022231719</i> </span>
+      <span> <i class="fa fa-envelope text-white icon"> info@algorismng.com</i> </span>
 
       <div class="social" id="social">
-        <span> <i class="icon-linked_in text-white icon1x"></i></span>
-        <span> <i class="icon-facebook text-white icon1x"></i></span>
-        <span> <i class="icon-twitter text-white icon1x"></i></span> 
+        <span><a href="https://www.linkedin.com/company/10222223?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10222223%2Cidx%3A2-1-2%2CtarId%3A1474563042207%2Ctas%3AAlgorism"><i class="fa fa-linkedin-square text-white icon1x" aria-hidden="true"></i></a></span>
+        <span><a href="https://www.facebook.com/algorismng/?fref=ts"><i class="fa fa-facebook-square text-white icon1x" aria-hidden="true"></i></a></span>
+        <span><a href="https://twitter.com/algorismng"><i class="fa fa-twitter-square text-white icon1x" aria-hidden="true"></i></a></span> 
       </div>         
 
     </div> 
@@ -53,40 +59,44 @@
         <ul class="right chevron">
           <li><a href="#about">About Us</a>
             <ul id="sub-menu">
-              <li id="new_text"><a>Executive Team</a></li>
-              <li id="new_text"><a>Leadership team</a></li>
+              <li id="new_text"><a href="#about">Who We Are</a></li>
+              <li id="new_text"><a href="team.html">Leadership team</a></li>
             </ul>
           </li>
-          <li id="new_text"><a href="products.html">Consulting</a></li>
-          <li id="new_text"><a>Solutions</a>
-            <ul id="sub-menu">
-              <li ><a>Enterprise Solutions</a>
-                <ul id="sub-menu">
-                  <li id="new_text"><a>Digital Marketing &amp; Distribution</a></li>
-                  <li id="new_text"><a>Customer Experience &amp; Loyalty</a></li>
-                  <li id="new_text"><a href="">Talent &amp; Performance Management</a></li>
-                  <li id="new_text"><a href="">Income &amp; Fee Optimization</a></li>
-                  <li id="new_text"><a href="">Business Intelligence &amp; Big Data Analytics</a></li>
-                  <li id="new_text"><a href="">Business Process Management &amp; Portal Solutions</a></li>
-                  <li id="new_text"><a href="">Core Systems for Banking &amp; Insurance</a></li>
-                </ul>
-              </li> 
+          <li><a href="consulting.html">Consulting</a></li>
 
-              <li id="new_text"><a>Government Solutions</a>
-                <ul id="sub-menu">
-                  <li><a href="">Public Sector Revenue &amp; Resource Management</a></li>
-                  <li><a href="">Citizens Engagement &amp; Service Portals</a></li>
-                  <li><a href="">National Trade/Customs Single Window Solutions</a></li>
-                  <li><a href="">Bespoke &amp; Turnkey Solutions</a></li>
-                </ul>
-              </li>     
+          <li ><a href="enterprise-solutions.html">Enterprise Solutions</a>
+            <ul id="sub-menu">
+              <li id="new_text"><a href="enterprise-solutions.html">Digital Marketing &amp; Distribution</a></li>
+              <li id="new_text"><a href="enterprise-solutions.html">Customer Experience &amp; Loyalty</a></li>
+              <li id="new_text"><a href="enterprise-solutions.html">Talent &amp; Performance Management</a></li>
+              <li id="new_text"><a href="enterprise-solutions.html">Income &amp; Fee Optimization</a></li>
+              <li id="new_text"><a href="enterprise-solutions.html">Business Intelligence &amp; Big Data Analytics</a></li>
+              <li id="new_text"><a href="enterprise-solutions.html">Business Process Management &amp; Portal Solutions</a></li>
+              <li id="new_text"><a href="enterprise-solutions.html">Core Systems for Banking &amp; Insurance</a></li>
+            </ul>
+          </li> 
+          
+          
+          <li><a href="government-solutions.html">Government Solutions</a>
+            <ul id="sub-menu">
+              <li id="new_text"><a href="government-solutions.html">Public Sector Revenue &amp; Resource Management</a></li>
+              <li id="new_text"><a href="government-solutions.html">Citizens Engagement &amp; Service Portals</a></li>
+              <li id="new_text"><a href="government-solutions.html">National Trade/Customs Single Window Solutions</a></li>
+              <li id="new_text"><a href="government-solutions.html">Bespoke &amp; Turnkey Solutions</a></li>
+            </ul>
+          </li>     
+
+          <li><a href="innovation.html">Innovation Services</a></li>
+          <li><a href="outsourcing.html">Outsourcing &amp; <br>Testing Services</a>
+            <ul id="sub-menu">
+              <li id="new_text"><a href="outsourcing.html">Testing &amp; Quality Assurance</a></li>
+              <li id="new_text"><a href="outsourcing.html">Technical Resources</a></li>
             </ul>
           </li>
-          <li id="new_text"><a href="about.html">Innovation Services</a></li>
-          <li id="new_text"><a href="about.html">Outsourcing &amp; Testing Services</a></li>
-          <li id="new_text"><a href="gallery.html">Career</a></li>
-          <li id="new_text"><a href="contact.html">Contact</a></li>
-          <li id="new_text"><a href="contact.html">Blog</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+          <li><a href="contact.html">Blog</a></li>
 
         </ul>
       </div>
@@ -105,8 +115,8 @@
               <div class="content-center-vertical line">
                 <div class="margin-top-bottom-80">
                   <!-- Title -->
-                  <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1 ">Digital Marketing &amp; Distribution</h1>
-                  <div class="s-12 m-10 l-8 center"><p class="text-white text-size-25 margin-bottom-40 ">Digital Marketing, Omni-channel solutions for FIs</p></div>
+                  <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1 animated lightSpeedIn ">Digital Marketing &amp; Distribution</h1>
+                  <div class="s-12 m-10 l-8 center"><p class="text-white text-size-25 margin-bottom-40 animated fadeInLeft ">Digital Marketing, Digital Banking &amp; Omni-channel solutions for FIs</p></div>
                   <div class="line">
                     <div class="s-12 m-12 l-3 center">
                       <a class="button button-white-stroke s-12" href="#contact-us">Contact Us</a>
@@ -120,12 +130,12 @@
 
         <div class="item">
           <div class="s-12">
-            <img src="img/digit_market.png" alt="">
+            <img src="img/Testing.png" alt="">
             <div class="carousel-content">
               <div class="content-center-vertical line">
                 <div class="margin-top-bottom-80">
                   <!-- Title -->
-                  <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">Outsourcing &amp; Testing Services</h1>
+                  <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1 animated lightSpeedIn">Outsourcing &amp; Testing Services</h1>
                   <div class="s-12 m-10 l-8 center"><p class="text-white text-size-25 margin-bottom-40"></p></div>
                   <div class="line">
                     <div class="s-12 m-12 l-3 center">
@@ -190,7 +200,7 @@
     <!-- Section 1 -->
     <section class="section" id="about">
       <div class="line">
-        <h2 class="text-size-50 text-center">Who we are</h2>
+        <h2 class="text-size-50 text-center animated fadeInLeft">Who we are</h2>
         <hr class="break-small background-primary break-center">
       </div>
       <div class="line">
@@ -226,16 +236,16 @@
             <div class="padding-2x block-bordered">
               <img src="img/digital.png" alt="digital" class="center">
               <h2 class="text-thin">Enterprise Solutions</h2>
-              <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-              <a class="button button-dark-stroke text-size-12" href="/">READ MORE...</a>
+              <p class="margin-bottom-30">Algorism works with enterprises to deliver solutions that enable significant improvements in business performance, process optimisation and product/service innovation.</p>
+              <a class="button button-dark-stroke text-size-12" href="enterprise-solutions.html">READ MORE...</a>
             </div>
           </div>
           <div class="s-12 m-12 l-3 margin-m-bottom">
             <div class="padding-2x block-bordered">
               <img src="img/government.png" alt="government" class="center">
               <h2 class="text-thin">Government Solutions</h2>
-              <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-              <a class="button button-dark-stroke text-size-12" href="/">READ MORE...</a>
+              <p class="margin-bottom-30">Algorism facilitates greater efficiency in Government and Public Sector by providing the required expertise and local knowledge to facilitate the delivery of world-class....</p>
+              <a class="button button-dark-stroke text-size-12" href="government-solutions.html">READ MORE...</a>
             </div>
           </div>
           <div class="s-12 m-12 l-3 margin-m-bottom">
@@ -251,7 +261,7 @@
           <div class="padding-2x block-bordered">
             <img src="img/innovate.jpg" alt="innovate" class="center">
             <h2 class="text-thin">Innovation Services</h2>
-            <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+            <p class="margin-bottom-30">Algorism helps dynamic enterprises leverage emerging disruptive technologies to achieve the next wave of growth rather than become a victim of disruptive..</p>
             <a class="button button-dark-stroke text-size-12" href="/">READ MORE...</a>
           </div>
         </div>
@@ -259,208 +269,62 @@
     </div>
   </section>
 
-  <!-- <hr class="break margin-top-bottom-0"> -->
 
-  
 
-  <!-- Section 5 -->    
-    <!-- <section class="section background-white text-center">
-      <div class="line">
-        <h2 class="text-size-50 text-center">Our Partners</h2>
-        <hr class="break-small background-primary break-center">
-        <div class="carousel-default owl-carousel carousel-wide-arrows">
-          <div class="item">
-            <div class="s-12 m-12 l-7 center text-center">
-              <img class="image-testimonial-small" src="img/oracle." alt="">
-              <p class="h1 margin-bottom text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-              <p class="h1 text-size-16">Scott Star / CEO / Company</p>
-            </div>
+  <hr class="break margin-top-bottom-0">
+
+  <!-- Section 4 -->
+  <section class="section-top-padding full-width" id="partners">
+    <h2 class="text-size-50 text-center">Our Partners</h2>
+    <hr class="break-small background-primary break-center"> 
+    <div class="tabs background-primary-hightlight">
+      <div class="tab-item tab-active">
+        <a class="tab-label active-btn">Enterprise Solutions</a>
+        <div class="tab-content lightbox-gallery">
+          <div class="s-12 m-6 l-3">
+            <a class="image-with-hover-overlay image-hover-zoom" href="#partners">
+              <div class="image-hover-overlay background-primary"> 
+                <div class="image-hover-overlay-content text-center padding-2x">
+                  <h2 class="text-thin">Oracle</h2> 
+                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                </div> 
+              </div> 
+              <img src="img/oracle.jpg" alt="" title="Oracle" />
+            </a>	
           </div>
-          <div class="item"> 
-            <div class="s-12 m-12 l-7 center text-center">
-              <img class="image-testimonial-small" src="img/passageways.png" alt="">
-              <p class="h1 margin-bottom text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-              <p class="h1 text-size-16">Mark Stoner / Web Developer / Company</h5>
-              </div>
-            </div>
-            <div class="item">
-              <div class="s-12 m-12 l-7 center text-center">
-                <img class="image-testimonial-small" src="img/apigee.png" alt="">
-                <p class="h1 margin-bottom text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-                <p class="h1 text-size-16">Jane Naismith / Web Designer / Company</p>
-              </div>
-            </div>
-
-             <div class="item">
-              <div class="s-12 m-12 l-7 center text-center">
-                <img class="image-testimonial-small" src="img/sage.jpg" alt="">
-                <p class="h1 margin-bottom text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-                <p class="h1 text-size-16">Jane Naismith / Web Designer / Company</p>
-              </div>
-            </div>
+          <div class="s-12 m-6 l-3">
+            <a class="image-with-hover-overlay image-hover-zoom" href="#partners">
+              <div class="image-hover-overlay background-primary"> 
+                <div class="image-hover-overlay-content text-center padding-2x">
+                  <h2 class="text-thin">Microsoft</h2> 
+                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                </div> 
+              </div> 
+              <img src="img/Microsoft.png" alt="" title="Portfolio Image 2" />
+            </a>	
           </div>
-        </div>
-      </section>
-    -->
-    <!-- <hr class="break margin-top-bottom-0"> -->
-
-
-    <!-- Section 2 -->
-      <!-- <section class="full-width">
-        <div class="s-12 m-12 l-6">  
-          <img src="img/img-12.jpg" alt="">
-        </div>
-        <div class="s-12 m-12 l-6">
-          <div class="padding-2x">
-            <div class="line">
-              <div class="float-left">
-                <i class="icon-sli-drop icon3x text-dark"></i>
-              </div>
-              <div class="margin-left-60 margin-bottom-30">
-                <h3 class="text-size-25 margin-bottom-0">Unlimited Color Variants</h3>
-                <p class="text-dark">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.<br> Vel illum dolore eu feugiat nulla facilisis.</p>            
-              </div>
-            </div>
-
-            <div class="line">
-              <div class="float-left">
-                <i class="icon-sli-screen-smartphone icon3x text-dark"></i>
-              </div>
-              <div class="margin-left-60 margin-bottom-30">
-                <h3 class="text-size-25 margin-bottom-0">Responsive Layoute</h3>
-                <p class="text-dark">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>            
-              </div>
-            </div>
-
-            <div class="line">
-              <div class="float-left">
-                <i class="icon-sli-heart icon3x text-dark"></i>
-              </div>
-              <div class="margin-left-60 margin-bottom-30">
-                <h3 class="text-size-25 margin-bottom-0">Clean Minimalistic Design</h3>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.<br> Vel illum dolore eu feugiat nulla facilisis.</p>            
-              </div>
-            </div>
-
-            <div class="line">
-              <div class="float-left">
-                <i class="icon-sli-chart icon3x text-dark"></i>
-              </div>
-              <div class="margin-left-60 margin-bottom-30">
-                <h3 class="text-size-25 margin-bottom-0">Tons of Animated Elements</h3>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>            
-              </div>
-            </div>
-
-            <div class="line">
-              <div class="float-left">
-                <i class="icon-sli-globe-alt icon3x text-dark"></i>
-              </div>
-              <div class="margin-left-60">
-                <h3 class="text-size-25 margin-bottom-0">And many more...</h3>
-                <p class="text-dark">Nam liber tempor cum soluta nobis eleifend. Duis autem vel eum iriure dolor<br> in hendrerit in vulputate velit esse molestie consequat.</p>            
-              </div>
-            </div> 
+          <div class="s-12 m-6 l-3">
+            <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-08.jpg">
+              <div class="image-hover-overlay background-primary"> 
+                <div class="image-hover-overlay-content text-center padding-2x">
+                  <h2 class="text-thin">Sage</h2> 
+                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                </div> 
+              </div> 
+              <img src="img/sage.png" alt="" title="Sage" />
+            </a>	
           </div>
-        </div>
-      </section> -->
-
-      <!-- Section 3 -->
-     <!--  <section class="section background-white" >  
-        <div class="line">
-          <h2 class="text-size-50 text-center">Our Stats</h2>
-          <hr class="break-small background-primary break-center">
-          <div class="margin margin-top-bottom-50">
-            <div class="s-12 m-12 l-3">
-              <div class="block">
-                <div class="count-to">
-                  <span class="timer h1 text-size-50">1500</span>
-                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Eodem modo typi</p> 
-                </div>
-              </div>
-            </div>
-            <div class="s-12 m-12 l-3">
-              <div class="block">
-                <div class="count-to">
-                  <span class="timer h1 text-size-50">95%</span>
-                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Duis autem</p> 
-                </div>
-              </div>
-            </div>
-            <div class="s-12 m-12 l-3">
-              <div class="block">
-                <div class="count-to">
-                  <span class="timer h1 text-size-50">287</span>
-                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Mirum est notare</p> 
-                </div>
-              </div>
-            </div>
-            <div class="s-12 m-12 l-3">
-              <div class="block">
-                <div class="count-to">
-                  <span class="timer h1 text-size-50">7 milion</span>
-                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Nam liber tempor</p> 
-                </div>
-              </div>
-            </div> 
+          <div class="s-12 m-6 l-3">
+            <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-05.jpg">
+              <div class="image-hover-overlay background-primary"> 
+                <div class="image-hover-overlay-content text-center padding-2x">
+                  <h2 class="text-thin">IBM</h2> 
+                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                </div> 
+              </div> 
+              <img src="img/ibm.png" alt="" title="ibm" />
+            </a>	
           </div>
-        </div>
-      </section> -->
-      
-      <!-- <hr class="break margin-top-bottom-0"> -->
-      
-      <!-- Section 4 -->
-      <section class="section-top-padding full-width" id="partners">
-        <h2 class="text-size-50 text-center">Our Partners</h2>
-        <hr class="break-small background-primary break-center"> 
-        <div class="tabs background-primary-hightlight">
-          <div class="tab-item tab-active">
-            <a class="tab-label active-btn">Enterprise Solutions</a>
-            <div class="tab-content lightbox-gallery">
-              <div class="s-12 m-6 l-3">
-                <a class="image-with-hover-overlay image-hover-zoom" href="#partners">
-                  <div class="image-hover-overlay background-primary"> 
-                    <div class="image-hover-overlay-content text-center padding-2x">
-                      <h2 class="text-thin">Oracle</h2> 
-                      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
-                    </div> 
-                  </div> 
-                  <img src="img/oracle.jpg" alt="" title="Oracle" />
-                </a>	
-              </div>
-              <div class="s-12 m-6 l-3">
-                <a class="image-with-hover-overlay image-hover-zoom" href="#partners">
-                  <div class="image-hover-overlay background-primary"> 
-                    <div class="image-hover-overlay-content text-center padding-2x">
-                      <h2 class="text-thin">Microsoft</h2> 
-                      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
-                    </div> 
-                  </div> 
-                  <img src="img/Microsoft.png" alt="" title="Portfolio Image 2" />
-                </a>	
-              </div>
-              <div class="s-12 m-6 l-3">
-                <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-08.jpg">
-                  <div class="image-hover-overlay background-primary"> 
-                    <div class="image-hover-overlay-content text-center padding-2x">
-                      <h2 class="text-thin">Sage</h2> 
-                      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
-                    </div> 
-                  </div> 
-                  <img src="img/sage.png" alt="" title="Sage" />
-                </a>	
-              </div>
-              <div class="s-12 m-6 l-3">
-                <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-05.jpg">
-                  <div class="image-hover-overlay background-primary"> 
-                    <div class="image-hover-overlay-content text-center padding-2x">
-                      <h2 class="text-thin">IBM</h2> 
-                      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
-                    </div> 
-                  </div> 
-                  <img src="img/ibm.png" alt="" title="ibm" />
-                </a>	
-              </div>
               <!-- <div class="s-12 m-6 l-3">
                 <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/video.mp4">
                   <div class="image-hover-overlay background-primary"> 
@@ -551,7 +415,7 @@
                       <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
                     </div> 
                   </div> 
-                  <img src="img/portfolio/thumb-05.jpg" alt="" title="Portfolio Image 4" />
+                  <img src="img/passageways.jpg" alt="" title="Portfolio Image 4" />
                 </a>	
               </div>
               <!-- <div class="s-12 m-6 l-3">
@@ -707,13 +571,13 @@
     <!-- FOOTER -->
     <footer>
 
-      <!-- <hr class="break margin-top-bottom-0"> -->
 
       <!-- Contact Us -->
       <div class="padding text-center">
         <p class="h1 new_h1">Get in touch</p>                                                                        
       </div>
-      
+
+      <hr class="break margin-top-bottom-0">
       
       <!-- Main Footer -->
       <section class="background-dark full-width" id="contact-us">
@@ -779,23 +643,23 @@
       <!-- Map -->
       <div class="s-12 m-12 l-4 margin-m-bottom-2x">
         <div class="s-12 center">     
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.613222711372!2d3.423148214316686!3d6.44368289847218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d6b258e9c3%3A0xb6b736e2d97471e!2s74+Raymond+Njoku+Rd!5e0!3m2!1sen!2sng!4v1474017004737" width="450" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-       </div>
-     </div>
-   </section>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.613222711372!2d3.423148214316686!3d6.44368289847218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d6b258e9c3%3A0xb6b736e2d97471e!2s74+Raymond+Njoku+Rd!5e0!3m2!1sen!2sng!4v1474017004737" width="450" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
 
-   <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+    <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
 
-   <!-- Bottom Footer -->
-   <section class="padding background-dark full-width">
-    <div class="s-12 l-6">
-      <span class="text-size-12">Copyright &copy; 2016, Algorism Limited</span>
-    </div>
-    <div class="s-12 l-6">
-      <div class="social" id="social">
-        <span> <i class="icon-linked_in text-white icon1x"></i></span>
-        <span> <i class="icon-facebook text-white icon1x"></i></span>
-        <span> <i class="icon-twitter text-white icon1x"></i></span> 
+    <!-- Bottom Footer -->
+    <section class="padding background-dark full-width">
+      <div class="s-12 l-6">
+        <span class="text-size-12">Copyright &copy; 2016, Algorism Limited</span>
+      </div>
+      <div class="s-12 l-6">
+       <div class="social" id="social">
+        <span> <i class="fa fa-linkedin-square text-white icon1x" aria-hidden="true"></i></span>
+        <span> <i class="fa fa-facebook-square text-white icon1x" aria-hidden="true"></i></span>
+        <span> <i class="fa fa-twitter-square text-white icon1x" aria-hidden="true"></i></span> 
       </div>
     </div>
   </section>

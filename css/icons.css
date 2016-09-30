@@ -1,13 +1,13 @@
 /* Icon font - MFG labs */
 @font-face {
   font-family: 'mfg';
-    src: url('../font/mfglabsiconset-webfont.eot');
-    src: url('../font/mfglabsiconset-webfont.svg#mfg_labs_iconsetregular') format('svg'),
-   		   url('../font/mfglabsiconset-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/mfglabsiconset-webfont.woff') format('woff'),
-         url('../font/mfglabsiconset-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  src: url('../font/mfglabsiconset-webfont.eot');
+  src: url('../font/mfglabsiconset-webfont.svg#mfg_labs_iconsetregular') format('svg'),
+  url('../font/mfglabsiconset-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/mfglabsiconset-webfont.woff') format('woff'),
+  url('../font/mfglabsiconset-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .icon-cloud,
@@ -207,9 +207,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon {font-size: 1rem;
-  padding: 1em 0.5em 1em 0.5em;
-  
+.icon {
+  font-size: 0.8rem;
+  padding: 0.5em;
 }
 .icon1x {font-size: 1.2rem;}
 .icon2x {font-size: 2rem;}
